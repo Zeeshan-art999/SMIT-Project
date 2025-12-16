@@ -1,0 +1,144 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    position: relative;
+    min-width: 100vh;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-weight: 100;
+    color: #666;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #2bb0e6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.hero-image {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero-image img {
+    width: 280px;
+    height: auto;
+}
+
+/* STATS SECTION */
+.stats {
+    background-image: url("./background.jpg");
+    /* background image yahan lagana */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 150px 20%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: #fff;
+}
+
+.stat-box h3 {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* MISSION SECTION */
+.mission {
+    text-align: center;
+    padding: 80px 20%;
+}
+
+.mission h1 {
+    font-size: 32px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.mission p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* IMAGES SECTION */
+.images {
+    background-image: url(./background.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 80px 10%;
+}
+
+.image-boxes {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    justify-content: center;
+    font-weight: 50;
+}
+
+.image-box {
+    border: 2px dashed #fff;
+    padding: 60px;
+    width: 250px;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        min-height: auto;
+    }
+    .hero-image {
+        position: static;
+        transform: none;
+        margin-top: 40px;
+    }
+
+    .hero-image img {
+        margin-top: 30px;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .image-boxes {
+        flex-direction: column;
+    }
+}
