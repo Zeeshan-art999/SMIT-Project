@@ -1,0 +1,112 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+
+.navbar {
+    height: 60;
+    background-color: #F7F8FC;
+    color: lab(27.1134 -0.956401 -12.3224);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo {
+    height: 50px;
+    width: 5%;
+}
+
+.logo {
+    background-image: url(/SMIT\ logo.png);
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
+
+.border {
+    border: 1.5px solid transparent;
+}
+
+.border:hover {
+    border: 1.5px solid lab(27.1134 -0.956401 -12.3224);
+}
+
+.nav-address {
+    width: 50%;
+    font-size: 0.90rem;
+    cursor: pointer;
+}
+
+.nav-address p {
+    display: inline;
+    margin-left: 25px
+}
+
+.nav-address button {
+    font-size: medium;
+    background-color: #0B73B7;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 500px;
+    margin-left: 20px;
+    border: none;
+}
+
+/* HERO-SECTION */
+.hero-section {
+    display: inline-block;
+    background-color: #F7F8FC;
+    justify-items: center;
+    width: 100%;
+}
+
+.hero-title1 {
+    color: #212121;
+    margin: 40px 0px 0px;
+    font-size: x-large;
+}
+
+.hero-title2 {
+    font-size: x-large;
+    color: #0B73B7;
+    text-align: center;
+}
+
+.hero-title2 p {
+    color: #686868;
+    margin: 8px 16.5px 0px;
+    font-size: large;
+}
+
+.hero-img img {
+    height: 35px;
+    justify-content: center;
+    margin: 8px 0;
+}
+
+.hero-button1 button {
+    font-size: medium;
+    background-color: #0B73B7;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 500px;
+    border: none;
+}
+
+.hero-display {
+    display: flex;
+}
+
+.hero-video iframe{
+    margin: 70px 20px 40px 20px;
+    border-radius:20px;
+}
+/* Ratio-Area */
+.ratio-area{
+    display:flex;
+    background-color: #57C785;
+    height: 200px;
+}

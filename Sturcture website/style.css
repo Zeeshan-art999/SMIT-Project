@@ -43,7 +43,7 @@
     position: absolute;
     right: 10%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%)
 }
 
 .hero-image img {
@@ -54,7 +54,6 @@
 /* STATS SECTION */
 .stats {
     background-image: url("./background.jpg");
-    /* background image yahan lagana */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -123,6 +122,7 @@ footer {
         text-align: center;
         min-height: auto;
     }
+
     .hero-image {
         position: static;
         transform: none;
