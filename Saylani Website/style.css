@@ -107,6 +107,9 @@
 /* Ratio-Area */
 .ratio-area{
     display:flex;
+    justify-content: center;
+    line-height: 200px;
+    margin-left: 20px;
     background-color: #57C785;
     height: 200px;
 }
