@@ -16,6 +16,7 @@
 
 .hero-content {
     max-width: 500px;
+    position: relative;
 }
 
 .hero-content h1 {
@@ -41,9 +42,9 @@
 
 .hero-image {
     position: absolute;
-    right: 10%;
-    top: 50%;
-    transform: translateY(-50%)
+    right: 150px;
+    top: 0px;
+   
 }
 
 .hero-image img {
