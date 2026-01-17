@@ -1,0 +1,26 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.navbar{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: blue;
+    color: #FFF;
+}
+.nav-tittle{
+    display: flex;
+        font-weight: 100;
+    font-size: medium;
+}
+
+.nav-ch h6{
+    /* display: flex; */
+    font-weight: 100;
+    align-items: center;
+    font-size: xx-small;
+    margin-right: 400px;
+}
