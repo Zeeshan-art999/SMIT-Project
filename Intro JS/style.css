@@ -1,26 +1,92 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-.navbar{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: blue;
+
+.navbar {
+    width: 100%;
+    min-height: 20px;
+    background-color: black;
     color: #FFF;
-}
-.nav-tittle{
     display: flex;
-        font-weight: 100;
-    font-size: medium;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 50px;
 }
 
-.nav-ch h6{
-    /* display: flex; */
+.nav-title {
+    display: flex;
+}
+
+.nav-title h5 {
+    font-size: x-small;
     font-weight: 100;
-    align-items: center;
+}
+
+.nav-title h6 {
     font-size: xx-small;
-    margin-right: 400px;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+.nav-search {
+    display: flex;
+}
+
+.nav-search input {
+    padding: 2px 0px 2px 4px;
+    font-weight: 100;
+    font-size: xx-small;
+    border-radius: 2px;
+    border: none;
+}
+
+.nav-search button {
+    margin-left: 2px;
+    padding: 4px 3px;
+    font-size: xx-small;
+    border-radius: 2px;
+    border: none;
+}
+
+/* Hero-Section */
+.hero-section {
+    padding: 20px 100px;
+    text-align: center;
+}
+
+.hero-section h5 {
+    flex-direction: row;
+    font-size: x-small;
+    font-weight: 550;
+    /* white-space: nowrap; 
+    overflow: hidden;      
+    text-overflow:ellipsis; */
+}
+
+.hero-section hr {
+    width: 100%;
+    border: none;
+    border-top: 0.1px solid black;
+    margin-top: 10px;
+}
+/* Calculating Area */
+.calculating-area{
+    padding:10px 100px;
+    min-height: 200px;   
+} 
+.box-area{
+    border: 1px solid #686868;
+    padding: 10px 10px;
+}
+.box-area button{
+    background-color: red;
+    color: #FFF;
+    font-size: xx-small;
+    font-weight: 100;
+    padding: 2px 3px;
+    border-radius: 2px;
+    border: none;
 }
