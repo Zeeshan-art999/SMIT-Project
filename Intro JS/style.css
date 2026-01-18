@@ -8,7 +8,7 @@
 .navbar {
     width: 100%;
     min-height: 20px;
-    background-color: black;
+    background: #1f3a5f;
     color: #FFF;
     display: flex;
     justify-content: space-between;
@@ -48,7 +48,9 @@
     padding: 4px 3px;
     font-size: xx-small;
     border-radius: 2px;
-    border: none;
+    background: none;
+    color:#198754;
+    border: 0.1px solid #198754;
 }
 
 /* Hero-Section */
@@ -72,21 +74,83 @@
     border-top: 0.1px solid black;
     margin-top: 10px;
 }
+
 /* Calculating Area */
-.calculating-area{
-    padding:10px 100px;
-    min-height: 200px;   
-} 
-.box-area{
-    border: 1px solid #686868;
-    padding: 10px 10px;
+.calculating-area {
+    padding: 10px 100px;
+    /* min-height: 200px;    */
 }
-.box-area button{
+
+.box-area {
+    border: 1px solid #686868;
+    padding: 10px 20px;
+}
+
+.box-area button {
     background-color: red;
     color: #FFF;
-    font-size: xx-small;
-    font-weight: 100;
+    font-size: 8px;
+    /* font-weight: 100; */
     padding: 2px 3px;
     border-radius: 2px;
     border: none;
+}
+/* Original Statment */
+.statment-area{
+    padding: 10px 100px;
+    text-align: center;
+    font-size: small;
+    font-weight: 550;
+}
+.output-box {
+    height: 25px;
+    border: 0.1px solid black;
+    background:none;
+    margin-bottom: 5px;
+}
+
+.statment-area button{
+    font-size: 7px;
+    color: #686868;
+    border: 0.1px solid #686868;
+    border-radius: 2px;
+    padding: 2px 3px;
+    background: none;
+}
+/* Result-Area */
+.result-area{
+    padding: 10px 100px;
+    text-align: center;
+    font-size: small;
+    font-weight: 550;
+}
+.result-box {
+    height: 25px;
+    border: 0.1px solid black;
+    background:none;
+    margin-bottom: 5px;
+}
+
+.result-area button{
+    font-size: 7px;
+    color: #686868;
+    border: 0.1px solid #686868;
+    border-radius: 2px;
+    padding: 3px 3px;
+    background: none;
+}
+/* FOOTER */
+footer {
+    background: #1f3a5f;
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-size: 7px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
