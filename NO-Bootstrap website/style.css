@@ -7,20 +7,29 @@
 
 .nav-bar {
     display: flex;
-    position:sticky;
+    /* position:sticky; */
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
+    padding: 8px 16px;
     height: 30px;
     background-color: #ffffff;
     color: #000000;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.nav-left {
-    display: flex;
-    font-size: small;
+.nav-left{
+    font-size: 16px;
+    letter-spacing: 3px;
 }
+.nav-left strong{
+    font-weight: bold;
+}
+
+ /* .nav-left h6 { 
+    font-size: small;
+     display: flex;
+    font-size: small; 
+ } */
 
 .nav-right h6 {
     display: inline-block;

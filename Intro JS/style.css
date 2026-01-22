@@ -49,7 +49,7 @@
     font-size: xx-small;
     border-radius: 2px;
     background: none;
-    color:#198754;
+    color: #198754;
     border: 0.1px solid #198754;
 }
 
@@ -77,39 +77,59 @@
 
 /* Calculating Area */
 .calculating-area {
-    padding: 10px 100px;
-    /* min-height: 200px;    */
+    padding: 10px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .box-area {
     border: 1px solid #686868;
-    padding: 10px 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .box-area button {
-    background-color: red;
+    background-color: #dc3545;
     color: #FFF;
     font-size: 8px;
-    /* font-weight: 100; */
-    padding: 2px 3px;
-    border-radius: 2px;
+    padding: 6px 10px;
+    border-radius: 4px;
     border: none;
+    cursor: pointer;
 }
+
+/* Responsive adjustments */
+/* @media (max-width: 900px) {
+    .calculating-area { max-width: 760px; padding: 12px; }
+    .box-area button { font-size: 13px; padding: 6px 8px; }
+}
+
+@media (max-width: 600px) {
+    .calculating-area { max-width: 100%; padding: 10px; }
+    .box-area { padding: 8px; }
+    .box-area button { font-size: 12px; padding: 5px 8px; }
+} */
+
 /* Original Statment */
-.statment-area{
-    padding: 10px 100px;
+.statment-area {
+    padding: 0px 100px;
     text-align: center;
     font-size: small;
     font-weight: 550;
 }
-.output-box {
+
+.input-box {
     height: 25px;
     border: 0.1px solid black;
-    background:none;
+    background: none;
     margin-bottom: 5px;
 }
 
-.statment-area button{
+.statment-area button {
     font-size: 7px;
     color: #686868;
     border: 0.1px solid #686868;
@@ -117,21 +137,23 @@
     padding: 2px 3px;
     background: none;
 }
+
 /* Result-Area */
-.result-area{
+.result-area {
     padding: 10px 100px;
     text-align: center;
     font-size: small;
     font-weight: 550;
 }
-.result-box {
+
+.output-box {
     height: 25px;
     border: 0.1px solid black;
-    background:none;
+    background: none;
     margin-bottom: 5px;
 }
 
-.result-area button{
+.result-area button {
     font-size: 7px;
     color: #686868;
     border: 0.1px solid #686868;
@@ -139,8 +161,9 @@
     padding: 3px 3px;
     background: none;
 }
+
 /* FOOTER */
-footer {
+footer p{
     background: #1f3a5f;
     margin-top: 20px;
     color: #fff;
@@ -149,8 +172,3 @@ footer {
     font-size: 7px;
 }
 
-footer a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
