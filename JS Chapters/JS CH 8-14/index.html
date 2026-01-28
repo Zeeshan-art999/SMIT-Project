@@ -10,28 +10,33 @@
 </head>
 
 <body>
-    
+
     <header>
-        <nav class="navbar nav-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href="javascript:void(0)">Assignments</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
-                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg p-3" style="background-color:#1f3b5b;">
+            <div class="container-fluid px-4">
+
+                <!-- Left Text -->
+                <a class="navbar-brand text-white fw-semibold" href="#">
+                    Assignments <span class="ms-2 fw-normal">Chapter 8 - 14</span>
+                </a>
+
+                <!-- Toggle (Mobile) -->
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarToggler">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Chapter 1-7</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
+                <!-- Right Side -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+                    <form class="d-flex gap-2">
+                        <input class="form-control" type="search" placeholder="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>
+
             </div>
         </nav>
+
     </header>
 
     <main>
@@ -39,8 +44,8 @@
             <div class="container">
                 <div class="row mb-3 mb-md-5">
                     <div class="col">
-                        <h3 class="text-center">Chapter # 1-7 | Introduction to JavaScript | Data Types | Alert|
-                            Arithmetic Operators</h3>
+                        <h3 class="text-center">Chapter # 8-14 | Concatenation | Prompts | if...else and if statements |
+                        </h3>
                         <div class="border-buttom mt-4 border-secondary"></div>
                     </div>
                 </div>
@@ -48,11 +53,11 @@
                     <div class="col">
                         <!-- <div class="buttons border rounded-3  p-4 text-center gap-3"> -->
                         <div class="  d-flex border p-3 rounded-3 flex-wrap justify-content-center gap-2">
-                            <button class="btn btn-danger" id="alertString">Concatenate Some Strings</button>
-                            <button class="btn btn-danger" id="alertNumber">Ask Name From User</button>
-                            <button class="btn btn-danger" id="variableNames">Comparison Operators</button>
-                            <button class="btn btn-danger" id="camelCaseExamples"> if else if</button>
-                            <button class="btn btn-danger" id="sum2Numbers">Testing Sets of Conditions</button>
+                            <button class="btn btn-danger" id="concatenateSomeStrings">Concatenate Some Strings</button>
+                            <button class="btn btn-danger" id="askNameFromUser">Ask Name From User</button>
+                            <button class="btn btn-danger" id="comparisonOperators">Comparison Operators</button>
+                            <button class="btn btn-danger" id="ifElseif"> if else if</button>
+                            <button class="btn btn-danger" id="testingSetsofConditions">Testing Sets of Conditions</button>
                             <button class="btn btn-danger" id="substract2Numbers">if Statments Nested</button>
                             <button class="btn btn-danger" id="multiply2Numbers">login</button>
                             <button class="btn btn-danger" id="divide2Numbers">Check</button>
@@ -108,14 +113,14 @@
         </div>
     </main>
 
-    <footer class="footer bg-primary text-white text-center py-2">
+    <footer class="footer text-white text-center py-2" style="background-color: #1f3b5b;">
         <div class="container">
             <small>© 2022. Assignments By <strong>www.ZeeshanSarfraz.net</strong></small>
         </div>
     </footer>
 
 </body>
-<script src="./script.js"></script>
+<script src="/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
