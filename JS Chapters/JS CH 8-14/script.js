@@ -61,15 +61,40 @@ document.getElementById("ifElseif").onclick = function () {
     }
 }
 
-document.getElementById("testingSetsofConditions").onclick=function(){
+document.getElementById("testingSetsofConditions").onclick = function () {
     var age = prompt("Your age?");
     var weight = prompt("Your Weight?")
 
-    if(age >= 18 && weight <= 65){
+    if (age >= 18 && weight <= 65) {
         alert("You're a smart man.");
-    }else if(age >= 18 && weight < 65){
+    } else if (age >= 18 && weight < 65) {
         alert("You're a fat man.");
-    }else{
+    } else {
         alert("You're a babay")
+    }
+}
+
+document.getElementById("ifStatmentsNested").onclick = function () {
+    var age = prompt("Your age?");
+    if(age>=18)
+    var weight = prompt("Your Weight?")
+
+    if (age >= 18 && weight <= 65) {
+        alert("You're a smart man.");
+    } else if (age >= 18 && weight < 65) {
+        alert("You're a fat man.");
+    } else {
+        alert("You're  not a 18+.")
+    }
+}
+
+document.getElementById("login").onclick = function () {
+    var userName = prompt("Your user name");
+    var pass = prompt("Your password");
+
+    if (userName == "Zeeshan" && pass == "123") {
+        alert("User logged in")
+    } else {
+        alert("Invalid password")
     }
 }
