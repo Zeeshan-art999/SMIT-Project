@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 15 - 20 | Arrays</title>
+
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+        body {
+            height: 100%;
+            margin: 0;
+            background: #eef6ec;
+        }
+
+        /* top bar */
+        .top-bar {
+            background: #1f3a5f;
+            color: #fff;
+            padding: 12px 40px;
+        }
+
+        /* common box */
+        .custom-box {
+            border: 1px solid #9fb3c8;
+            background: #f3fbf2;
+            padding: 32px;
+            border-radius: 4px;
+        }
+
+        /* original string box */
+        .original-box {
+            background: #1f3a5f;
+            color: #fff;
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        /* red buttons */
+        .btn-red {
+            background: #dc3545;
+            color: #fff;
+        }
+
+        .btn-red:hover {
+            background: #bb2d3b;
+            color: #fff;
+        }
+
+        /* output box */
+        .output-box {
+            height: auto;
+            min-height: 290px;
+            border: 1px solid #9fb3c8;
+            background: #f3fbf2;
+            border-radius: 4px;
+        }
+
+        .footer-space {
+            height: 56px;
+            /* jitni space chahiye */
+        }
+
+        /* footer */
+        .footer {
+            background: #1f3a5f;
+            color: #fff;
+            padding: 8px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="py-2" style="background-color: #1a3753;">
+        <div class="container d-flex justify-content-between align-items-center text-white">
+
+            <div style="font-size: 14px;">
+                <span class="fw-normal fs-6 me-3">Assignments</span>
+                <span>Chapter 21 - 25</span>
+            </div>
+
+            <div class="d-flex gap-2">
+                <input type="text" class="form-control form-control-sm border-0" placeholder="Search"
+                    style="width: 150px; border-radius: 2px;">
+                <button class="btn btn-success btn-sm px-3"
+                    style="border-radius: 2px; background:none;border: 1px solid #198754;color: #198754;">Search</button>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Top Header -->
+    <!-- <div class="top-bar d-flex justify-content-between align-items-center">
+        <div>Assignments &nbsp;&nbsp; Chapter 15 - 20</div>
+        <div class="d-flex gap-2">
+            <input type="text" class="form-control form-control-sm" placeholder="Search">
+            <button class="btn btn-success btn-sm">Search</button>
+        </div>
+    </div> -->
+
+    <!-- Main Content -->
+    <div class="container my-5">
+
+        <h4 class="text-center mb-4">
+            Chapter # 21 - 25 | Strings & It's Methods
+        </h4>
+        <hr>
+
+        <div class="row g-4 mt-3">
+
+            <!-- Input -->
+            <div class="col-md-6">
+                <h6 class="text-center">Input</h6>
+                <div class="custom-box d-flex">
+                    <input type="text" class="form-control rounded-end-0" id="inputText" placeholder="Type your text here">
+                    <button class="btn btn-outline-secondary rounded-start-0" id="clearInput">Clear</button>
+                </div>
+            </div>
+
+            <!-- Original String -->
+            <div class="col-md-6">
+                <h6 class="text-center">Original String</h6>
+                <div class="original-box text-center p-3">
+                    I love my country Pakistan.<br>
+                    I like my city Faisalabad.<br>
+                    I love my HomeLand.
+                </div>
+            </div>
+
+            <!-- Buttons  -->
+            <div class="col-md-6">
+                <h6 class="text-center mb-2">Buttons</h6>
+                <div class="custom-box">
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <button class="btn btn-red w-100" id="simpleAlert">Convert to Lowercase</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-red w-100" onclick="printMyName()"> Convert to Uppercase</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-red w-100" id="printAllCities">Convert to Capitalize</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-red w-100" id="addCity">Better Formatting</button>
+                        </div>
+                         <div class="col-6">
+                            <button class="btn btn-red w-100" id="addCity">Print All Cities</button>
+                        </div>
+                         <div class="col-6">
+                            <button class="btn btn-red w-100" id="addCity">Add Your City In List</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-red w-100" id="addCity">Check Your City In List</button>
+                        </div><div class="col-6">
+                            <button class="btn btn-red w-100" id="addCity">Find This Word</button>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button class="btn btn-red w-50" id="generateTable">Replace This Word </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Output  -->
+            <div class="col-md-6">
+                <h6 class="text-center">Output / Result</h6>
+                <div class="output-box mb-3 p-4 text-center" id="output"></div>
+                <div class="text-center">
+                    <button class="btn btn-outline-secondary btn-sm" id="clearOutput">Clear Output</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-space"></div>
+
+    <!-- Footer -->
+    <div class="footer text-center">
+        © 2022 Assignments By <b>www.ZeeshanSarfraz.net</b>
+    </div>
+
+</body>
+<script src="/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</html>
