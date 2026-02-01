@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Chapter 15 - 20 | Arrays</title>
+    <title>Chapter 21 -25 | Arrays</title>
 
     <!-- Bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -60,7 +60,7 @@
         }
 
         .footer-space {
-            height: 56px;
+            height: 46px;
             /* jitni space chahiye */
         }
 
@@ -112,16 +112,17 @@
 
             <!-- Input -->
             <div class="col-md-6">
-                <h6 class="text-center">Input</h6>
+                <h5 class="text-center">Input</h5>
                 <div class="custom-box d-flex">
-                    <input type="text" class="form-control rounded-end-0" id="inputText" placeholder="Type your text here">
+                    <input type="text" class="form-control rounded-end-0" id="inputText"
+                        placeholder="Type your text here">
                     <button class="btn btn-outline-secondary rounded-start-0" id="clearInput">Clear</button>
                 </div>
             </div>
 
             <!-- Original String -->
             <div class="col-md-6">
-                <h6 class="text-center">Original String</h6>
+                <h5 class="text-center">Original String</h5>
                 <div class="original-box text-center p-3">
                     I love my country Pakistan.<br>
                     I like my city Faisalabad.<br>
@@ -131,30 +132,31 @@
 
             <!-- Buttons  -->
             <div class="col-md-6">
-                <h6 class="text-center mb-2">Buttons</h6>
+                <h5 class="text-center mb-2">Buttons</h5>
                 <div class="custom-box">
                     <div class="row g-2">
                         <div class="col-6">
-                            <button class="btn btn-red w-100" id="simpleAlert">Convert to Lowercase</button>
+                            <button class="btn btn-red w-100" onclick="lowerCase()">Convert to Lowercase</button>
                         </div>
                         <div class="col-6">
-                            <button class="btn btn-red w-100" onclick="printMyName()"> Convert to Uppercase</button>
+                            <button class="btn btn-red w-100" onclick="upperCase()"> Convert to Uppercase</button>
                         </div>
                         <div class="col-6">
-                            <button class="btn btn-red w-100" id="printAllCities">Convert to Capitalize</button>
+                            <button class="btn btn-red w-100" onclick="capitalize()">Convert to Capitalize</button>
                         </div>
                         <div class="col-6">
                             <button class="btn btn-red w-100" id="addCity">Better Formatting</button>
                         </div>
-                         <div class="col-6">
+                        <div class="col-6">
                             <button class="btn btn-red w-100" id="addCity">Print All Cities</button>
                         </div>
-                         <div class="col-6">
+                        <div class="col-6">
                             <button class="btn btn-red w-100" id="addCity">Add Your City In List</button>
                         </div>
                         <div class="col-6">
                             <button class="btn btn-red w-100" id="addCity">Check Your City In List</button>
-                        </div><div class="col-6">
+                        </div>
+                        <div class="col-6">
                             <button class="btn btn-red w-100" id="addCity">Find This Word</button>
                         </div>
                         <div class="col-12 text-center">
@@ -167,7 +169,7 @@
 
             <!-- Output  -->
             <div class="col-md-6">
-                <h6 class="text-center">Output / Result</h6>
+                <h5 class="text-center">Output / Result</h5>
                 <div class="output-box mb-3 p-4 text-center" id="output"></div>
                 <div class="text-center">
                     <button class="btn btn-outline-secondary btn-sm" id="clearOutput">Clear Output</button>
@@ -183,6 +185,7 @@
     </div>
 
 </body>
+<script src="/script.js"></script>
 <script src="/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
